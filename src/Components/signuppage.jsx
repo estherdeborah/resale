@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Switch } from 'react-router-dom';
 import "./signuppage.css";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
@@ -58,14 +57,8 @@ const WaitlistForm = () => {
             </button>
           </div>
         </form>
-        <Switch>
-          <Route path="/notify-me">
-            <NotifyMePage />
-          </Route>
-          <Route path="/freelancer-signup">
-            <FreelancerSignupPage />
-          </Route>
-        </Switch>
+        <Route exact path="/notify-me" component={NotifyMePage} />
+        <Route exact path="/freelancer-signup" component={FreelancerSignupPage} />
       </div>
     </Router>
   );
