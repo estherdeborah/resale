@@ -1,0 +1,54 @@
+
+  
+  h1 {
+    text-shadow: 2px 2px #000000;
+    font-size: 2rem;
+    
+    margin: 2rem 0 1rem 0;
+    position: relative;
+    text-shadow: 2px 2px 0 #000;
+    
+    text-shadow: 0ch;
+    color:#323232;
+    font: poppings;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 9%;
+  }
+  
+  .logo-text {
+    color: #7e1cfe; 
+  }
+  
+  
+  
+  
+  
+  
+  .image-container {
+    display: inline-block;
+    margin-right: 3rem;
+    vertical-align: middle;
+    position: absolute;
+    right:0;
+    top:80%;
+    transform: translateY(-50%);
+    padding-top: 8%;
+    
+  }
+  
+  
+  p {
+    font-size: 1.2rem;
+    margin: 20px auto 0;
+    max-width: 1000px;
+    padding: 0 20px;
+    padding-top:2%;
+  }
+  
+  @media  (max-width: 768px) {
+    .image-container{
+      display: none;
+    }
+    
+  }
